@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Files</h2>
+
+<table class="table table-striped">
+    <thead>
+        <th>Filename</th>
+        <th>ID</th>
+        <th>&nbsp;</th>
+    </thead>
+    <tbody>
+        {% for file in files %}
+        <tr>
+            <td>{{ file.name }}</td>
+            <td>{{ file.id }}</td>
+            <td>
+                {% if file.name != 'protected.txt' %}
+                <a href="/show?name={{ file.name }}&sig={{ file.signature }}" class="btn btn-success btn-md">Show</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

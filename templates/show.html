@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>File: {{ file.name }}</h2>
+
+<p>{{ name }}</p>
+
+{% if match %}
+    valid match!
+{% else %}
+    no match!
+{% endif %}
+<br/>
+
+<div style="border:1px solid #CCCCCC; background-color:#EEEEEE;padding:10px">
+    {{ file.content }}
+</div>
+
+<br/><hr/>
+<a href="/" class="btn btn-success btn-md">Back</a>
+
+{% endblock %}
