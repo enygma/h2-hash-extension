@@ -1,0 +1,24 @@
+{
+    "files": [
+        {
+            "id": 1,
+            "name": "file1.txt",
+            "content": "This file doesn't contain anything that most users shouldn't see."
+        },
+        {
+            "id": 2,
+            "name": "file2.txt",
+            "content": "This file also doesn't contain anything that most users shouldn't see."
+        },
+        {
+            "id": 3,
+            "name": "protected.txt",
+            "content": "This file content is protected!"
+        },
+        {
+            "id": 4,
+            "name": "file3.txt",
+            "content": "This file really doesn't contain anything that most users shouldn't see."
+        }
+    ]
+}
